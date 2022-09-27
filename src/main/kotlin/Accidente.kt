@@ -12,10 +12,10 @@ data class Accidente(
     val tipoAccidente: String,
     val clima: String,
     val vehiculo: String,
-    val persona: String,
+    val persona: TipoPersona,
     val sexo: String,
     val codLesividad: Int?,
-    val lesividad: String,
+    val lesividad: TipoLesividad,
     val alcohol: Boolean
     //val droga: Boolean
     )
