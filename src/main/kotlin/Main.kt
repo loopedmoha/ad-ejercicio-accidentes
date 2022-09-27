@@ -1,6 +1,22 @@
 fun main(args: Array<String>) {
     val lista = AccidenteControllerCollections.loadFromCSV()
-    AccidenteControllerCollections.accidentesHombres(lista)
-    AccidenteControllerCollections.accidentesCruces(lista)
-    
+    val separador = "------------------------------------------------------"
+    println(separador)
+    AccidenteControllerCollections.accidentesConUnIngreso(lista)
+    println(separador)
+    AccidenteControllerCollections.fallecidosPorBarrios(lista)
+    println(separador)
+    AccidenteControllerCollections.fallecidosPorSexo(lista)
+    println(separador)
+    AccidenteControllerCollections.mesConMasIngresos(lista)
+    println(separador)
+AccidenteControllerCollections.mesConMasFallecidos(lista)
+    println(separador)
+AccidenteControllerCollections.mediaIngresosMes(lista)
+    println(separador)
+AccidenteControllerCollections.fallecidoDrogasAlcohol(lista)
+    println(separador)
+    AccidenteControllerCollections.barrioConMasFallecidos(lista)
+    println(separador)
+    AccidenteControllerCollections.barrioConMenosFallecidos(lista)
 }
