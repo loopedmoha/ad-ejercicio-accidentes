@@ -1,0 +1,3 @@
+enum class TipoAccidente() {
+    DOBLE, MULTIPLE, ALCANCE, CHOQUE, ATROPELLO, VUELCO, CAIDA, OTRO
+}
